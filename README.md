@@ -1,2 +1,1 @@
-# ritm-landing
-Minimalistic landing page
+# ritm-app

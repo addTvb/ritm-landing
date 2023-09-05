@@ -1,0 +1,30 @@
+.text-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--black-2);
+}
+.text-block.white {
+  background: var(--gray-1);
+}
+
+.text-block .text {
+  background: radial-gradient(150.17% 121.33% at 45.58% 49.96%, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align: center;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.8px;
+}
+
+@media (max-width: 1230px) {
+  .text-block .text {
+    font-size: 60px;
+  }
+}

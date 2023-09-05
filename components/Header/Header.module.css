@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    width: 100%;
+    padding: 14px 69px 14px 52px;
+    justify-content: space-between;
+    background: var(--gray-1);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+    backdrop-filter: blur(6px);
+}
+
+.header.white {
+    background: var(--gray-1);
+}
+
+.header.dark {
+    background: var(--gray-transparent-01);
+    color: #fff;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 35px;
+    letter-spacing: -0.16px;
+}
+
+.header .actions {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.actions .select-button {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    background: none;
+    border: none;
+    color: var(--gray-transparent-05);
+    letter-spacing: 0.14px;
+}
+
+.header.dark .actions .select-button {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.actions .order-button {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 23px;
+    border-radius: 67px;
+    border: none;
+    background: var(--gray-transparent-01);
+    transition: all 0.3s;
+}
+
+.actions .order-button:hover {
+    background: var(--black-1);
+    color: #fff;
+}
+
+.header.dark .actions .order-button {
+    background: rgba(174, 174, 174, 0.10);
+}
+
+.header.dark .actions .order-button:hover {
+    background: rgba(255, 255, 255, 0.50);
+}
+
+@media (max-width: 1230px) {
+    .header {
+        padding: 14px 30px;
+    }
+}
